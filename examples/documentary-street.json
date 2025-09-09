@@ -1,0 +1,72 @@
+{
+  "core": {
+    "subject": "elderly man buying fruit at a small street market",
+    "scene": "urban street in late afternoon",
+    "objects": [
+      "fruit stall",
+      "plastic bags",
+      "bus stop"
+    ],
+    "actions": [
+      "vendor handing change",
+      "man reaching"
+    ],
+    "constraints": [
+      "avoid motion blur that hides details"
+    ]
+  },
+  "style": {
+    "primary_style": "documentary",
+    "render_quality": "detailed",
+    "lighting": "natural",
+    "color_profile": "neutral"
+  },
+  "technical": {
+    "camera": {
+      "focal_length_mm": 50,
+      "depth_of_field": "medium"
+    },
+    "resolution": {
+      "target": "quad-hd",
+      "min_quality": "high-definition-minimum"
+    },
+    "rendering": {
+      "anti_aliasing": true,
+      "noise_level": "medium",
+      "color_depth": "standard"
+    },
+    "physics_accuracy": {
+      "gravity_cues": true,
+      "structural_believability": true
+    }
+  },
+  "materials": {
+    "fabric_details": "wear_indicators"
+  },
+  "environment": {
+    "atmosphere": [
+      "distance_haze"
+    ],
+    "time_season": [
+      "autumn",
+      "noon"
+    ],
+    "particles": [
+      "dust"
+    ]
+  },
+  "composition": {
+    "perspective": "natural_human_vision",
+    "framing": "rule_of_thirds",
+    "subject_placement": "balanced"
+  },
+  "quality_keywords": {
+    "include": [
+      "photographic quality",
+      "authentic textures"
+    ],
+    "avoid": [
+      "blurry"
+    ]
+  }
+}

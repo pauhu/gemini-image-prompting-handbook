@@ -1,0 +1,75 @@
+{
+  "core": {
+    "subject": "stainless-steel travel mug on a marble counter with steam rising",
+    "scene": "single product hero on seamless background",
+    "objects": [
+      "travel mug",
+      "marble counter",
+      "subtle steam"
+    ],
+    "constraints": [
+      "no visible logos",
+      "no hands",
+      "avoid reflections of camera"
+    ]
+  },
+  "style": {
+    "primary_style": "photorealistic",
+    "render_quality": "high-resolution",
+    "lighting": "studio",
+    "color_profile": "neutral"
+  },
+  "technical": {
+    "camera": {
+      "focal_length_mm": 85,
+      "depth_of_field": "shallow"
+    },
+    "resolution": {
+      "target": "4k",
+      "min_quality": "professional-quality"
+    },
+    "rendering": {
+      "anti_aliasing": true,
+      "noise_level": "low",
+      "color_depth": "high"
+    },
+    "physics_accuracy": {
+      "gravity_cues": true,
+      "structural_believability": true
+    }
+  },
+  "materials": {
+    "surfaces": [
+      "natural_irregularities",
+      "patina"
+    ],
+    "transparency": "surface_interactions"
+  },
+  "environment": {
+    "atmosphere": [
+      "distance_haze"
+    ],
+    "time_season": [
+      "noon"
+    ],
+    "particles": [
+      "moisture"
+    ]
+  },
+  "composition": {
+    "perspective": "telephoto",
+    "framing": "rule_of_thirds",
+    "subject_placement": "balanced"
+  },
+  "quality_keywords": {
+    "include": [
+      "photographic quality",
+      "natural lighting",
+      "authentic textures"
+    ],
+    "avoid": [
+      "oversaturated colors",
+      "digital artifacts"
+    ]
+  }
+}

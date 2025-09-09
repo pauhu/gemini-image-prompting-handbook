@@ -1,0 +1,82 @@
+{
+  "core": {
+    "subject": "middle-aged marine biologist standing on a rainy pier, wind pulling raincoat",
+    "scene": "stormy coastline with lighthouse far behind",
+    "objects": [
+      "raincoat",
+      "pier rails",
+      "waves",
+      "lighthouse"
+    ],
+    "actions": [
+      "wind gusts moving coat",
+      "sea spray"
+    ],
+    "constraints": [
+      "no brand marks in view"
+    ]
+  },
+  "style": {
+    "primary_style": "cinematic",
+    "render_quality": "detailed",
+    "lighting": "dramatic",
+    "color_profile": "muted"
+  },
+  "technical": {
+    "camera": {
+      "focal_length_mm": 35,
+      "depth_of_field": "medium"
+    },
+    "resolution": {
+      "target": "4k",
+      "min_quality": "high-definition-minimum"
+    },
+    "rendering": {
+      "anti_aliasing": true,
+      "noise_level": "film-grain",
+      "color_depth": "high"
+    },
+    "physics_accuracy": {
+      "gravity_cues": true,
+      "structural_believability": true
+    }
+  },
+  "materials": {
+    "fabric_details": "realistic_drape",
+    "surfaces": [
+      "scratches",
+      "authentic_oxidation"
+    ]
+  },
+  "environment": {
+    "atmosphere": [
+      "weather_effects",
+      "humidity"
+    ],
+    "time_season": [
+      "golden_hour",
+      "autumn"
+    ],
+    "particles": [
+      "mist",
+      "rain",
+      "atmospheric_depth"
+    ]
+  },
+  "composition": {
+    "perspective": "natural_human_vision",
+    "framing": "golden_ratio",
+    "subject_placement": "environmental"
+  },
+  "quality_keywords": {
+    "include": [
+      "hyperrealistic",
+      "natural lighting",
+      "authentic textures"
+    ],
+    "avoid": [
+      "unrealistic proportions",
+      "oversaturated colors"
+    ]
+  }
+}

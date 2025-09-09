@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pauhu.ai/schemas/gemini-image-prompt.schema.json",
+  "title": "Gemini Image Prompt (JSON-first)",
+  "description": "Opinionated schema translating the slide framework into a lintable JSON prompt.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "core": {
+      "type": "object",
+      "description": "Core structure \u2014 break the scene into distinct objects and constraints.",
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "type": "string",
+          "minLength": 3
+        },
+        "scene": {
+          "type": "string"
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject"
+      ]
+    },
+    "style": {
+      "type": "object",
+      "description": "Style definition",
+      "additionalProperties": false,
+      "properties": {
+        "primary_style": {
+          "type": "string",
+          "enum": [
+            "photorealistic",
+            "cinematic",
+            "documentary",
+            "studio",
+            "editorial",
+            "illustrative"
+          ]
+        },
+        "render_quality": {
+          "type": "string",
+          "enum": [
+            "hyperrealistic",
+            "detailed",
+            "high-resolution",
+            "high-definition-minimum",
+            "professional-quality"
+          ]
+        },
+        "lighting": {
+          "type": "string",
+          "enum": [
+            "natural",
+            "studio",
+            "dramatic",
+            "soft-ambient",
+            "golden-hour",
+            "overcast"
+          ]
+        },
+        "color_profile": {
+          "type": "string",
+          "enum": [
+            "neutral",
+            "rich",
+            "muted",
+            "monochrome"
+          ]
+        }
+      },
+      "required": [
+        "primary_style"
+      ]
+    },
+    "technical": {
+      "type": "object",
+      "description": "Technical specifications (camera-like controls)",
+      "additionalProperties": false,
+      "properties": {
+        "camera": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "focal_length_mm": {
+              "type": "number",
+              "minimum": 8,
+              "maximum": 300
+            },
+            "depth_of_field": {
+              "type": "string",
+              "enum": [
+                "shallow",
+                "medium",
+                "deep"
+              ]
+            },
+            "aperture_effects": {
+              "type": "string"
+            },
+            "exposure_notes": {
+              "type": "string"
+            }
+          }
+        },
+        "resolution": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "target": {
+              "type": "string",
+              "enum": [
+                "hd",
+                "quad-hd",
+                "4k",
+                "8k"
+              ]
+            },
+            "min_quality": {
+              "type": "string",
+              "enum": [
+                "high-definition-minimum",
+                "professional-quality"
+              ]
+            }
+          }
+        },
+        "rendering": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "anti_aliasing": {
+              "type": "boolean"
+            },
+            "noise_level": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "film-grain"
+              ]
+            },
+            "color_depth": {
+              "type": "string",
+              "enum": [
+                "standard",
+                "high"
+              ]
+            }
+          }
+        },
+        "physics_accuracy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "gravity_cues": {
+              "type": "boolean"
+            },
+            "structural_believability": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "materials": {
+      "type": "object",
+      "description": "Material properties",
+      "additionalProperties": false,
+      "properties": {
+        "skin_textures": {
+          "type": "string",
+          "enum": [
+            "pores",
+            "natural_imperfections",
+            "ethnic_diversity"
+          ]
+        },
+        "fabric_details": {
+          "type": "string",
+          "enum": [
+            "thread_patterns",
+            "realistic_drape",
+            "wear_indicators"
+          ]
+        },
+        "surfaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "scratches",
+              "patina",
+              "authentic_oxidation",
+              "natural_irregularities"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "transparency": {
+          "type": "string",
+          "enum": [
+            "accurate_refraction",
+            "surface_interactions"
+          ]
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "description": "Environmental factors",
+      "additionalProperties": false,
+      "properties": {
+        "atmosphere": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "distance_haze",
+              "weather_effects",
+              "humidity"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "time_season": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "dawn",
+              "noon",
+              "golden_hour",
+              "night",
+              "summer",
+              "autumn",
+              "winter",
+              "spring"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "particles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "dust",
+              "moisture",
+              "atmospheric_depth",
+              "mist",
+              "rain"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "composition": {
+      "type": "object",
+      "description": "Composition controls",
+      "additionalProperties": false,
+      "properties": {
+        "perspective": {
+          "type": "string",
+          "enum": [
+            "natural_human_vision",
+            "wide",
+            "telephoto",
+            "low-angle",
+            "overhead"
+          ]
+        },
+        "framing": {
+          "type": "string",
+          "enum": [
+            "rule_of_thirds",
+            "golden_ratio",
+            "centered",
+            "professional_positioning"
+          ]
+        },
+        "subject_placement": {
+          "type": "string",
+          "enum": [
+            "balanced",
+            "asymmetric",
+            "tight-crop",
+            "environmental"
+          ]
+        }
+      }
+    },
+    "quality_keywords": {
+      "type": "object",
+      "description": "Quality keywords to include/avoid explicitly.",
+      "additionalProperties": false,
+      "properties": {
+        "include": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "hyperrealistic",
+              "photographic quality",
+              "natural lighting",
+              "authentic textures",
+              "studio quality"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "digital artifacts",
+              "unrealistic proportions",
+              "oversaturated colors",
+              "blurry",
+              "overprocessed"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "include"
+      ]
+    },
+    "extras": {
+      "type": "object",
+      "description": "Free-form extension area to future-proof the schema.",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "core",
+    "style",
+    "quality_keywords"
+  ]
+}

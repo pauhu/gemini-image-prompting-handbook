@@ -1,0 +1,53 @@
+{
+  "core": {
+    "subject": "model in tailored black coat standing against seamless background",
+    "scene": "minimal fashion editorial studio setup",
+    "objects": [
+      "coat",
+      "heels"
+    ],
+    "constraints": [
+      "no logos",
+      "background pure neutral gray"
+    ]
+  },
+  "style": {
+    "primary_style": "studio",
+    "render_quality": "professional-quality",
+    "lighting": "studio",
+    "color_profile": "neutral"
+  },
+  "technical": {
+    "camera": {
+      "focal_length_mm": 85,
+      "depth_of_field": "shallow"
+    },
+    "resolution": {
+      "target": "8k",
+      "min_quality": "professional-quality"
+    },
+    "rendering": {
+      "anti_aliasing": true,
+      "noise_level": "low",
+      "color_depth": "high"
+    }
+  },
+  "materials": {
+    "fabric_details": "thread_patterns"
+  },
+  "environment": {},
+  "composition": {
+    "perspective": "telephoto",
+    "framing": "centered",
+    "subject_placement": "tight-crop"
+  },
+  "quality_keywords": {
+    "include": [
+      "studio quality",
+      "authentic textures"
+    ],
+    "avoid": [
+      "overprocessed"
+    ]
+  }
+}

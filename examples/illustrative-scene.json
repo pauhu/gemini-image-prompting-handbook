@@ -1,0 +1,62 @@
+{
+  "core": {
+    "subject": "mythical city floating above ocean waves",
+    "scene": "fantasy concept art panorama",
+    "objects": [
+      "flying ships",
+      "city towers",
+      "sunset sky"
+    ],
+    "constraints": [
+      "maintain sense of scale"
+    ]
+  },
+  "style": {
+    "primary_style": "illustrative",
+    "render_quality": "detailed",
+    "lighting": "dramatic",
+    "color_profile": "rich"
+  },
+  "technical": {
+    "camera": {
+      "focal_length_mm": 24,
+      "depth_of_field": "deep"
+    },
+    "resolution": {
+      "target": "4k",
+      "min_quality": "high-definition-minimum"
+    },
+    "rendering": {
+      "anti_aliasing": true,
+      "noise_level": "low",
+      "color_depth": "high"
+    }
+  },
+  "materials": {},
+  "environment": {
+    "atmosphere": [
+      "weather_effects"
+    ],
+    "time_season": [
+      "golden_hour",
+      "summer"
+    ],
+    "particles": [
+      "mist"
+    ]
+  },
+  "composition": {
+    "perspective": "wide",
+    "framing": "golden_ratio",
+    "subject_placement": "environmental"
+  },
+  "quality_keywords": {
+    "include": [
+      "hyperrealistic",
+      "authentic textures"
+    ],
+    "avoid": [
+      "unrealistic proportions"
+    ]
+  }
+}
