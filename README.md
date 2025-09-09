@@ -84,7 +84,26 @@ What it does:
 ---
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit improvements and bug fixes.
+We welcome contributions from the community! Please follow these rules to keep the project consistent:
+
+### Scope of contributions
+- ✅ Examples: new or improved prompt JSONs under `examples/` that pass validation.
+- ✅ Cookbook samples: small, runnable Python or Node snippets under `cookbook/`.
+- ✅ Validator/tooling: fixes or small features for `tools/validate_prompt.py`, CI, or docs.
+- ❗ Schema changes: open an issue first. Describe the need, compatibility impact, and examples you’ll provide. Wait for maintainer approval before opening a PR.
+
+### Ground rules
+- **JSON style**: 2-space indent, UTF-8, no trailing commas, lowercase enum values.
+- **File naming**: use `kebab-case.json` in `examples/`. Keep names short and descriptive.
+- **Keep examples minimal**: only fields necessary to illustrate the idea.
+- **Docs**: update `examples/README.md` or `cookbook/README.md` when adding new content.
+
+### Local checks
+Run all tests locally before pushing a PR:
+```bash
+./run_tests.sh
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit improvements and bug fixes.
 
 ## License
 
