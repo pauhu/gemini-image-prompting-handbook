@@ -1,5 +1,5 @@
 ## Description
-Brief description of the changes in this PR.
+Brief description of the changes in this pull request.
 
 ## Type of Change
 - [ ] Bug fix (non-breaking change which fixes an issue)
