@@ -22,12 +22,12 @@ This repo provides a JSON schema validation framework that brings software engin
 
 ## What’s inside
 
-- `schema/prompt.schema.json` — opinionated JSON schema for image prompts (core/style/technical/materials/environment/composition/quality)
-- `tools/validate_prompt.py` — lightweight validator for your prompt JSONs
-- `examples/` — minimal JSON prompt examples
-- `cookbook/` — step-by-step recipes (Gemini API calls in Python/JS mapped to the schema)
-- `refs/` — canonical links and notes to official docs
-- `CHANGELOG.md` — versioned changes
+- `schema/prompt.schema.json` – opinionated JSON schema for image prompts (core/style/technical/materials/environment/composition/quality)
+- `tools/validate_prompt.py` – lightweight validator for your prompt JSONs
+- `examples/` – minimal JSON prompt examples
+- `cookbook/` – step-by-step recipes (Gemini API calls in Python/JS mapped to the schema)
+- `refs/` – canonical links and notes to official docs
+- `CHANGELOG.md` – versioned changes
 
 ---
 
