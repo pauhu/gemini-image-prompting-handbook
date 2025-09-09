@@ -1,9 +1,15 @@
 # Gemini Image Prompting Handbook (JSON-first)
 
+[![Validate Prompts](https://github.com/YOUR_USERNAME/gemini-image-prompting-handbook/actions/workflows/validate.yml/badge.svg)](https://github.com/YOUR_USERNAME/gemini-image-prompting-handbook/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 Practical, JSON-first patterns for Google Gemini image generation.
 This repo turns a field-tested slide framework into a validated JSON schema, working examples, and a tiny CLI validator.
 
 > Who this is for: engineers and prompt authors who want repeatable, high-fidelity image outputs and structured requests.
+
+**Open Source Project** - We welcome contributions from the community!
 
 ---
 
@@ -76,12 +82,10 @@ What it does:
 7. Runs basic repo hygiene checks
 
 ---
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit improvements and bug fixes.
+
 ## License
 
 MIT - Copyright (c) 2025 Pauhu AI Ltd
-
----
-
-Note: This is a closed handbook repository.
-Pull requests (requests to change this repo) will not be accepted.
-If you want to adapt or extend, please fork or download your own copy.

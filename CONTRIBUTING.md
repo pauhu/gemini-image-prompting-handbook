@@ -1,19 +1,47 @@
 # Contributing
 
-This repository is published for reference and learning purposes only.
+We welcome contributions to the Gemini Image Prompting Handbook!
 
-## Pull Requests
-We do not accept pull requests (requests to change this repository on GitHub).
-If you would like to experiment or make changes:
-- Please fork the repository to your own GitHub account, or
-- Download a copy and modify it locally.
+## How to Contribute
 
-## Issues
-We also do not use GitHub Issues for this project.
-Questions, bug reports, or feature requests will not be tracked here.
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
 
-## Scope
-This is an official handbook repository maintained by Pauhu AI Ltd.
-The contents are curated and versioned to remain consistent with our internal standards.
+## Contribution Guidelines
 
-Summary: You are free to fork or download, but cannot propose changes directly to this repository.
+### For Schema Changes
+- Discuss major changes in an issue first
+- Ensure backward compatibility
+- Update all examples to match schema changes
+- Document the rationale for changes
+
+### For New Examples
+- Follow existing naming conventions
+- Ensure examples pass schema validation
+- Include diverse use cases
+- Add meaningful descriptions
+
+### For Code Improvements
+- Add type hints to Python code
+- Include error handling
+- Write clear commit messages
+- Update relevant documentation
+
+## Testing
+Before submitting:
+```bash
+./run_tests.sh
+```
+
+All tests must pass.
+
+## Code of Conduct
+Please note we have a Code of Conduct. Follow it in all interactions with the project.
+
+## Questions?
+Feel free to open an issue for discussion before making large changes.
+
+Thank you for helping improve this project!
