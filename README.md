@@ -1,6 +1,6 @@
  # Gemini Image Prompting Handbook (JSON-first)
 
-  [![Validate Prompts](https://github.com/pauhu/gemini-image-prompting-handbook/actions
+ [![Validate Prompts](https://github.com/pauhu/gemini-image-prompting-handbook/actions
   /workflows/validate.yml/badge.svg)](https://github.com/pauhu/gemini-image-prompting-h
   andbook/actions/workflows/validate.yml)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://openso
