@@ -120,4 +120,4 @@ Please see **[CONTRIBUTING.md](CONTRIBUTING.md)** for details on submitting impr
 
 ## License
 
-MIT — Copyright (c) 2025 Pauhu AI Ltd
+MIT – Copyright (c) 2025 Pauhu AI Ltd
