@@ -13,7 +13,7 @@ A clear and concise description of what the bug is.
 **To Reproduce**
 Steps to reproduce the behavior:
 1. Run command '...'
-2. With JSON file '....'
+2. With JSON file '...'
 3. See error
 
 **Expected behavior**
